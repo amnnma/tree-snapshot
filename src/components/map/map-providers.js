@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import omit from 'lodash/omit';
 import { fetch } from 'layer-manager';
 
