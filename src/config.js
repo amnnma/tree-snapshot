@@ -14,17 +14,17 @@ export default {
   chapters: [
     {
       id: "amazon3",
-      title: "อดีตและปัจจุบัน",
+      title: "ความเป็นมา",
       legend: [
         {
-          title: 'Tree cover loss 2001 - 2019',
+          title: 'Tree cover loss 2001 - 2020',
           color: '#DC6B9C'
         }
       ],
       image: "",
       source: "Global Forest watch",
       description:
-        "why",
+        "จากการเปลี่ยนแปลงของสภาพอากาศเป็นหนึ่งในปัญหาสำคัญที่เกิดจากภาวะโลกร้อน โดยเฉพาะในสังคมเมือง หรือในชื่อของ “Urban Heat Island”  ( ปรากฏการณ์เกาะความร้อนเมือง ) ที่เกิดขึ้นทำให้อุณหภูมิความร้อนเพิ่มขึ้นทุก ๆ ปี ‘ต้นไม้’ ถูกมองว่าเป็นวิธีแก้ปัญหาที่ใช่แต่จากแผนที่ด้านซ้ายต้นไม้ลดลงอย่างต่อเนื่อง",
       location: {
         center: [101.3722, 14.4392],
         zoom: 4,
@@ -37,7 +37,7 @@ export default {
           opacity: 1,
         },
         {
-          layer: "Tree-cover-loss-2001-2019",
+          layer: "Tree-cover-loss-2001-2020",
           opacity: 1,
         },
         {
@@ -51,7 +51,7 @@ export default {
           opacity: 0.3,
         },
         {
-          layer: "Tree-cover-loss-2001-2019",
+          layer: "Tree-cover-loss-2001-2020",
           opacity: 0.3,
         }
       ],
@@ -134,7 +134,7 @@ export default {
       image: "",
       source: "asd",
       description:
-        "",
+        "ผลลัพธ์จากแบบจำลองจะทำนายการเปลี่ยนแปลงของพื้นที่ชั้นต้นไม้ในอนาคตยังอยู่ในขั้นตอนของการพัฒนา อาจมีบางจุดหรือบางอย่างที่ขาดไปแต่ทางเราจะเพิ่มความถูกต้องของโมเดลโดยใช้เครื่องมือทางภูมิศาสตร์มากขึ้น",
       location: {
         center: [100.0373, 13.8140],
         zoom: 2,
