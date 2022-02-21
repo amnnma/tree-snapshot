@@ -6,8 +6,8 @@ export default {
   showMarkers: false,
   theme: "mongabay",
   intro: {
-    title: "Test",
-    subtitle: "Test",
+    title: "Story",
+    subtitle: "NSC2022",
   },
   alignment: "left",
   footer: "NSC2022",
@@ -69,7 +69,7 @@ export default {
           color: '#F30404'
         }
       ],
-      image: "",
+      image: "rho.png",
       source: "Model",
       description:
         "สิ่งที่เราทำคือการทำนายการสูญเสียของพื้นที่ชั้นต้นไม้ในอนาคตที่คาดว่าน่าจะสูญเสียจากแบบจำลองการถดถอย จากรูปคือบริเวณพื้นที่ของกรุงเทพมหานครในปี 2050",
@@ -105,7 +105,7 @@ export default {
           color: '#F30404'
         }
       ],
-      image: "",
+      image: "rho.png",
       source: "Model",
       description:
         "ในอีกด้านหนึ่ง จากรูปคือบริเวณพื้นที่ของอุทยานแห่งชาติเขาใหญ่ในปี 2050",
@@ -141,18 +141,8 @@ export default {
         pitch: 0.0,
         bearing: 0,
       },
-      onChapterEnter: [
-        {
-          layer: "amnnma",
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "amnnma",
-          opacity: 0,
-        },
-      ],
+      onChapterEnter: [],
+      onChapterExit: []
     }
   ],
 };
