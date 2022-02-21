@@ -14,16 +14,22 @@ export default {
   chapters: [
     {
       id: "amazon3",
-      title: "2223",
+      title: "อดีตและปัจจุบัน",
+      legend: [
+        {
+          title: 'Tree cover loss 2001 - 2019',
+          color: '#DC6B9C'
+        }
+      ],
       image: "",
-      source: "asdlk",
+      source: "Global Forest watch",
       description:
         "why",
       location: {
         center: [101.3722, 14.4392],
-        zoom: 11,
-        pitch: 40,
-        bearing: 50,
+        zoom: 4,
+        pitch: 0,
+        bearing: 0,
       },
       onChapterEnter: [
         {
@@ -52,16 +58,62 @@ export default {
     },
     {
       id: "amazon-region",
-      title: "ความเป็นมา",
+      title: "อนาคต",
+      legend: [
+        {
+          title: 'พื้นที่ที่เหลืออยู่',
+          color: '#008e00'
+        },
+        {
+          title: 'พื้นที่ที่สูญเสีย',
+          color: '#F30404'
+        }
+      ],
       image: "",
-      source: "asd",
+      source: "Model",
       description:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "สิ่งที่เราทำคือการทำนายการสูญเสียของพื้นที่ชั้นต้นไม้ในอนาคตที่คาดว่าน่าจะสูญเสียจากแบบจำลองการถดถอย จากรูปคือบริเวณพื้นที่ของกรุงเทพมหานครในปี 2050",
       location: {
         center: [100.523186, 13.736],
-        zoom: 4.42,
+        zoom: 12,
         pitch: 0.0,
-        bearing: -8.78,
+        bearing: 0,
+      },
+      onChapterEnter: [
+        {
+          layer: "amnnma",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "amnnma",
+          opacity: 1,
+        },
+      ],
+    },
+    {
+      id: "amazon-region2",
+      title: "อนาคต",
+      legend: [
+        {
+          title: 'พื้นที่ที่เหลืออยู่',
+          color: '#008e00'
+        },
+        {
+          title: 'พื้นที่ที่สูญเสีย',
+          color: '#F30404'
+        }
+      ],
+      image: "",
+      source: "Model",
+      description:
+        "ในอีกด้านหนึ่ง จากรูปคือบริเวณพื้นที่ของอุทยานแห่งชาติเขาใหญ่ในปี 2050",
+      location: {
+        center: [101.3722, 14.43],
+        zoom: 12,
+        pitch: 0.0,
+        bearing: 0,
       },
       onChapterEnter: [
         {
@@ -78,21 +130,21 @@ export default {
     },
     {
       id: "amazon",
-      title: "222",
+      title: "สรุป",
       image: "",
       source: "asd",
       description:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "",
       location: {
         center: [100.0373, 13.8140],
-        zoom: 11,
+        zoom: 2,
         pitch: 0.0,
-        bearing: -8.78,
+        bearing: 0,
       },
       onChapterEnter: [
         {
           layer: "amnnma",
-          opacity: 1,
+          opacity: 0,
         },
       ],
       onChapterExit: [
