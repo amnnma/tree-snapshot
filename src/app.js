@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import './app.scss';
-import Story from './components/story/story';
-import Map from './components/map/map';
-import Intro from './components/intro/intro';
-
+import React, { useState } from "react";
+import "./app.scss";
+import Story from "./components/story/story";
+import Map from "./components/map/map";
+import Intro from "./components/intro/intro";
 
 const App = (props) => {
   const {
@@ -17,17 +16,21 @@ const App = (props) => {
     byline,
     alignment,
     footer,
-    intro
+    intro,
   } = props;
   const [currentChapterId, setCurrentChapter] = useState(chapters[0]);
   const [currentAction, setCurrentAction] = useState();
 
-  const renderError = (missing) => <div className="flex justify-center items-center h-screen">Please add the missing {missing}. Check the Readme</div>;
-  if (style === 'ADD YOUR MAPBOX STYLE HERE') {
-    return renderError('Mapbox map style');
+  const renderError = (missing) => (
+    <div className="flex items-center justify-center h-screen">
+      Please add the missing {missing}. Check the Readme
+    </div>
+  );
+  if (style === "ADD YOUR MAPBOX STYLE HERE") {
+    return renderError("Mapbox map style");
   }
   if (!accessToken) {
-    return renderError('Mapbox access token');
+    return renderError("Mapbox access token");
   }
 
   return (

@@ -46,9 +46,9 @@ export default [
     source: 'resource-watch'
   },
   {
-    id: 'Tree-cover-loss-2001-2019',
-    name: 'Tree cover loss - 2001-2019',
-    slug: 'Tree-cover-loss-2001-2019',
+    id: 'Tree-cover-loss-2001-2020',
+    name: 'Tree cover loss - 2001-2020',
+    slug: 'Tree-cover-loss-2001-2020',
     type: 'raster',
     source: {
       maxzoom: 12,
@@ -60,7 +60,7 @@ export default [
     },
     decodeParams: {
       startYear: 2001,
-      endYear: 2019
+      endYear: 2020
     },
     decodeFunction: `\n      // values for creating power scale, domain (input), and range (output)\n
       float domainMin = 0.;\n

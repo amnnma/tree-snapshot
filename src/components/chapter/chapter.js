@@ -22,18 +22,18 @@ function Chapter({ id, theme, title, image, images, description, currentChapterI
           }
         >
           <div className="flex mr-1">{(img.title)}</div>-
-          <div className="font-bold ml-1">{(img.author)}</div>
+          <div className="ml-1 font-bold">{(img.author)}</div>
         </figcaption>
       )}
     </figure>
   );
 
   const renderLegend = (legend, sources) => (
-    <div className="text-sm pb-12 px-12">
+    <div className="px-12 pb-12 text-sm">
       {legend.map((l) => (
         <div key={l.title} className="flex items-center mb-4">
           <span
-            className="legendItem w-8 h-8 mr-4"
+            className="w-8 h-8 mr-4 legendItem"
             style={{
               borderRadius: l.type === 'circle' ? '50%' : 'none',
               backgroundColor: l.color,
@@ -70,8 +70,8 @@ function Chapter({ id, theme, title, image, images, description, currentChapterI
         {images &&
           images.filter((i) => i.position === 'top').map((i) => renderImage(i))}
         {title && (
-          <div className="content text-base py-12 px-12 leading-6">
-            {title && <h3 className="font-serif text-2xl pb-6">{(title)}</h3>}
+          <div className="px-12 py-12 text-base leading-6 content">
+            {title && <h3 className="pb-6 font-serif text-2xl">{(title)}</h3>}
             {description && (
               <p className="text-sm leading-8">{(description)}</p>
             )}
