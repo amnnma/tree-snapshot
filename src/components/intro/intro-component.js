@@ -7,13 +7,11 @@ import { ReactComponent as Arrow } from '../../assets/arrow.svg';
 const Intro = ({ title, subtitle, height }) => {
   const heightStyle = height ? { height: `${height}px` } : undefined;
   return (
-    <div className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
-      <div className="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
-    {title}
+    <div className="relative flex items-center justify-center h-screen mb-12 overflow-hidden intro bg-cover bg-no-repeat">
+      <div className="relative z-30 p-5 text-2xl text-black bg-purple-300 bg-opacity-50 rounded-xl">
+    <center>{title}</center><br/> {subtitle}
   </div>
-  <video autoPlay loop muted className="absolute z-10 w-auto min-w-full min-h-full max-w-none">
-    <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4" />Your browser does not support the video tag.
-  </video>
+
     </div>
   );
 }
